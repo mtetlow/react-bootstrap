@@ -2,7 +2,6 @@ node_modules/
 docs/
 test-built/
 test/
-tools/
 .gitignore
 .travis.yml
 karma.ci.js
