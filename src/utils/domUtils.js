@@ -40,16 +40,11 @@ function getOffset(DOMNode) {
 /**
  * Get elements position
  *
- * TODO: REMOVE JQUERY!
- *
  * @param {HTMLElement} elem
  * @param {HTMLElement?} offsetParent
  * @returns {{top: number, left: number}}
  */
 function getPosition(elem, offsetParent) {
-  if (window.jQuery) {
-    return window.jQuery(elem).position();
-  }
 
   var offset,
       parentOffset = {top: 0, left: 0};
