@@ -24,15 +24,10 @@ function getComputedStyles(elem) {
 /**
  * Get elements offset
  *
- * TODO: REMOVE JQUERY!
- *
  * @param {HTMLElement} DOMNode
  * @returns {{top: number, left: number}}
  */
 function getOffset(DOMNode) {
-  if (window.jQuery) {
-    return window.jQuery(DOMNode).offset();
-  }
 
   let docElem = ownerDocument(DOMNode).documentElement;
   let box = { top: 0, left: 0 };
@@ -52,16 +47,11 @@ function getOffset(DOMNode) {
 /**
  * Get elements position
  *
- * TODO: REMOVE JQUERY!
- *
  * @param {HTMLElement} elem
  * @param {HTMLElement?} offsetParent
  * @returns {{top: number, left: number}}
  */
 function getPosition(elem, offsetParent) {
-  if (window.jQuery) {
-    return window.jQuery(elem).position();
-  }
 
   let offset,
       parentOffset = {top: 0, left: 0};
